@@ -361,6 +361,66 @@ section.main-content {
 </div>
 
 <div class="app-panels">
+  <article class="app-panel" id="chable">
+    <div class="app-header">
+      <img src="{{ '/assets/icon_chable.png' | relative_url }}" alt="Chable app icon" />
+      <div>
+        <p class="eyebrow" style="color:#0f172a; letter-spacing:0.2em;">Business Strategy Simulation</p>
+        <h2>Chable</h2>
+        <p class="app-lede">
+          Scan real-world places, acquire businesses, and build your company over time. Chable blends
+          discovery, portfolio strategy, and financial decisions into a focused business-building game.
+        </p>
+      </div>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-block">
+        <h3>Scan & Acquire</h3>
+        <ul class="feature-list">
+          <li>Scan nearby locations and match results against official business data.</li>
+          <li>Acquire locations using available cash and track each deal in your bank ledger.</li>
+          <li>Fallback business-type matching keeps discovery useful when exact listings are unavailable.</li>
+        </ul>
+      </div>
+      <div class="feature-block">
+        <h3>Portfolio Management</h3>
+        <ul class="feature-list">
+          <li>Track stores by chain and rename brands across your holdings.</li>
+          <li>Review monthly income, debt, and net worth trends from the dashboard.</li>
+          <li>Manage risk with loan settings and changing interest-rate environments.</li>
+        </ul>
+      </div>
+      <div class="feature-block">
+        <h3>Admin Curation</h3>
+        <ul class="feature-list">
+          <li>Maintain official business and type templates in the admin console.</li>
+          <li>Queue, review, and approve scan findings into official datasets.</li>
+          <li>Bulk import/export queue data with CSV for faster content operations.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3>Store Links</h3>
+      <div class="store-badges">
+        <a class="store-badge" href="https://apps.apple.com/app/chable/id6762150334" target="_blank" rel="noopener noreferrer" aria-label="Download Chable on the App Store">
+          <img src="{{ '/assets/branding/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' | relative_url }}" alt="Download Chable on the App Store" />
+        </a>
+        <span class="store-badge" aria-label="Google Play coming soon">
+          <img src="{{ '/assets/branding/GetItOnGooglePlay_Badge_Web_color_English.svg' | relative_url }}" alt="Google Play coming soon" style="opacity:0.35;" />
+        </span>
+      </div>
+      <p class="app-lede" style="margin-top:0.5rem; color:#475569;">
+        iOS is live on the App Store. Android is on the way. Check back soon.
+      </p>
+    </div>
+    <div>
+      <h3>Support & Policies</h3>
+      <ul class="policy-links">
+        <li><a href="./chable_support">Support Center</a></li>
+        <li><a href="./chable_privacy_policy">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </article>
   <article class="app-panel" id="tepes">
     <div class="app-header">
       <img src="{{ '/assets/icon_tepes.png' | relative_url }}" alt="Tepes app icon" />
@@ -750,67 +810,6 @@ section.main-content {
       <ul class="policy-links">
         <li><a href="./suner_support">Support Center</a></li>
         <li><a href="./suner_privacy_policy">Privacy Policy</a></li>
-      </ul>
-    </div>
-  </article>
-
-  <article class="app-panel" id="chable">
-    <div class="app-header">
-      <img src="{{ '/assets/icon_chable.png' | relative_url }}" alt="Chable app icon" />
-      <div>
-        <p class="eyebrow" style="color:#0f172a; letter-spacing:0.2em;">Business Strategy Simulation</p>
-        <h2>Chable</h2>
-        <p class="app-lede">
-          Scan real-world places, acquire businesses, and build your company over time. Chable blends
-          discovery, portfolio strategy, and financial decisions into a focused business-building game.
-        </p>
-      </div>
-    </div>
-    <div class="feature-grid">
-      <div class="feature-block">
-        <h3>Scan & Acquire</h3>
-        <ul class="feature-list">
-          <li>Scan nearby locations and match results against official business data.</li>
-          <li>Acquire locations using available cash and track each deal in your bank ledger.</li>
-          <li>Fallback business-type matching keeps discovery useful when exact listings are unavailable.</li>
-        </ul>
-      </div>
-      <div class="feature-block">
-        <h3>Portfolio Management</h3>
-        <ul class="feature-list">
-          <li>Track stores by chain and rename brands across your holdings.</li>
-          <li>Review monthly income, debt, and net worth trends from the dashboard.</li>
-          <li>Manage risk with loan settings and changing interest-rate environments.</li>
-        </ul>
-      </div>
-      <div class="feature-block">
-        <h3>Admin Curation</h3>
-        <ul class="feature-list">
-          <li>Maintain official business and type templates in the admin console.</li>
-          <li>Queue, review, and approve scan findings into official datasets.</li>
-          <li>Bulk import/export queue data with CSV for faster content operations.</li>
-        </ul>
-      </div>
-    </div>
-    <div>
-      <h3>Store Links</h3>
-      <div class="store-badges">
-        <a class="store-badge" href="https://apps.apple.com/app/chable/id6762150334" target="_blank" rel="noopener noreferrer" aria-label="Download Chable on the App Store">
-          <img src="{{ '/assets/branding/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' | relative_url }}" alt="Download Chable on the App Store" />
-        </a>
-        <span class="store-badge" aria-label="Google Play coming soon">
-          <img src="{{ '/assets/branding/GetItOnGooglePlay_Badge_Web_color_English.svg' | relative_url }}" alt="Google Play coming soon" style="opacity:0.35;" />
-        </span>
-      </div>
-      <p class="app-lede" style="margin-top:0.5rem; color:#475569;">
-        iOS is live on the App Store. Android is on the way. Check back soon.
-      </p>
-    </div>
-    <div>
-      <h3>Support & Policies</h3>
-      <ul class="policy-links">
-        <li><a href="./chable_support">Support Center</a></li>
-        <li><a href="./chable_privacy_policy">Privacy Policy</a></li>
       </ul>
     </div>
   </article>
