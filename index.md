@@ -405,12 +405,12 @@ section.main-content {
         <a class="store-badge" href="https://apps.apple.com/app/chable/id6762150334" target="_blank" rel="noopener noreferrer" aria-label="Download Chable on the App Store">
           <img src="{{ '/assets/branding/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' | relative_url }}" alt="Download Chable on the App Store" />
         </a>
-        <span class="store-badge" aria-label="Google Play coming soon">
-          <img src="{{ '/assets/branding/GetItOnGooglePlay_Badge_Web_color_English.svg' | relative_url }}" alt="Google Play coming soon" style="opacity:0.35;" />
-        </span>
+        <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.mgobill.chable" target="_blank" rel="noopener noreferrer" aria-label="Get Chable on Google Play">
+          <img src="{{ '/assets/branding/GetItOnGooglePlay_Badge_Web_color_English.svg' | relative_url }}" alt="Get Chable on Google Play" />
+        </a>
       </div>
       <p class="app-lede" style="margin-top:0.5rem; color:#475569;">
-        iOS is live on the App Store. Android is on the way. Check back soon.
+        Now available on the App Store and Google Play.
       </p>
     </div>
     <div>

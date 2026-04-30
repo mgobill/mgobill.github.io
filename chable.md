@@ -6,7 +6,7 @@ permalink: /chable/
 ---
 
 {% assign chable_app_store_url = "https://apps.apple.com/app/chable/id6762150334" %}
-{% assign chable_play_store_url = "https://play.google.com/store/search?q=chable&c=apps" %}
+{% assign chable_play_store_url = "https://play.google.com/store/apps/details?id=com.mgobill.chable" %}
 
 <style>
 :root {
@@ -243,6 +243,31 @@ h1 {
   }
 }
 </style>
+
+<script>
+(() => {
+  const appStoreUrl = {{ chable_app_store_url | jsonify }};
+  const playStoreUrl = {{ chable_play_store_url | jsonify }};
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.get('no_redirect') === '1') {
+    return;
+  }
+
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera || '';
+  const platform = navigator.platform || '';
+  const maxTouchPoints = navigator.maxTouchPoints || 0;
+  const isiOS = /iPad|iPhone|iPod/.test(userAgent) || (platform === 'MacIntel' && maxTouchPoints > 1);
+  const isAndroid = /Android/i.test(userAgent);
+  const redirectUrl = isiOS ? appStoreUrl : isAndroid ? playStoreUrl : '';
+
+  if (!redirectUrl) {
+    return;
+  }
+
+  window.location.replace(redirectUrl);
+})();
+</script>
 
 <div class="shell">
   <section class="hero">
