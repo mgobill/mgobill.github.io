@@ -5,7 +5,7 @@ description: Chable download links and game overview
 permalink: /chable/
 ---
 
-{% assign chable_app_store_url = "https://apps.apple.com/app/chable/id6762150334" %}
+{% assign chable_app_store_url = "https://apps.apple.com/app/chable-business-empire/id6762150334" %}
 {% assign chable_play_store_url = "https://play.google.com/store/apps/details?id=com.mgobill.chable" %}
 
 <style>

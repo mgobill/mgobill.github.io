@@ -402,7 +402,7 @@ section.main-content {
     <div>
       <h3>Store Links</h3>
       <div class="store-badges">
-        <a class="store-badge" href="https://apps.apple.com/app/chable/id6762150334" target="_blank" rel="noopener noreferrer" aria-label="Download Chable on the App Store">
+        <a class="store-badge" href="https://apps.apple.com/app/chable-business-empire/id6762150334" target="_blank" rel="noopener noreferrer" aria-label="Download Chable on the App Store">
           <img src="{{ '/assets/branding/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' | relative_url }}" alt="Download Chable on the App Store" />
         </a>
         <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.mgobill.chable" target="_blank" rel="noopener noreferrer" aria-label="Get Chable on Google Play">
