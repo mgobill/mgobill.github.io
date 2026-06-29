@@ -103,6 +103,21 @@ h1 {
   display: block;
 }
 
+.download-heading {
+  margin: 0 0 0.15rem;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.download-note {
+  margin: 0 0 0.7rem;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
 .store-card {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -121,11 +136,20 @@ h1 {
   min-height: 52px;
   border-radius: 10px;
   padding: 0.35rem 0.5rem;
-  transition: background 130ms ease;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  transition: background 130ms ease, border-color 130ms ease, transform 130ms ease;
 }
 
 .store-link:hover {
-  background: #f1f5f9;
+  background: #ffffff;
+  border-color: #b9d2dd;
+  transform: translateY(-1px);
+}
+
+.store-link:focus-visible {
+  outline: 3px solid rgba(15, 118, 110, 0.28);
+  outline-offset: 2px;
 }
 
 .store-link img {
@@ -218,28 +242,80 @@ h1 {
 
 @media (min-width: 760px) {
   section.main-content {
-    padding: 1.35rem 1.4rem 3rem;
+    display: flex;
+    align-items: center;
+    max-width: 1040px;
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
   }
 
   .shell {
-    grid-template-columns: 1.14fr 0.86fr;
-    align-items: start;
-    gap: 1.15rem;
+    width: 100%;
+    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+    grid-template-areas:
+      "hero overview"
+      "download overview";
+    grid-template-rows: auto 1fr;
+    gap: 0;
+    overflow: hidden;
+    border: 1px solid rgba(219, 231, 240, 0.9);
+    border-radius: 28px;
+    background: var(--panel);
+    box-shadow: var(--shadow);
   }
 
   .hero {
-    padding: 1.35rem;
+    grid-area: hero;
+    padding: 2.5rem 2.5rem 1.35rem;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   .hero-icon {
-    width: 82px;
-    height: 82px;
-    border-radius: 18px;
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
   }
 
   .cta-strip {
-    position: sticky;
-    top: 1rem;
+    grid-area: download;
+    padding: 0.75rem 2.5rem 2.5rem;
+    background: linear-gradient(145deg, #0f766e 0%, #115e59 100%);
+  }
+
+  .download-heading,
+  .download-note {
+    text-align: left;
+    color: #f8fafc;
+  }
+
+  .download-note {
+    color: rgba(248, 250, 252, 0.78);
+  }
+
+  .store-card {
+    gap: 0.75rem;
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+  }
+
+  .store-link {
+    min-height: 66px;
+    background: #ffffff;
+  }
+
+  .store-link img {
+    height: 40px;
+  }
+
+  .overview {
+    grid-area: overview;
+    align-self: stretch;
+    padding: 2.5rem;
+    border: 0;
+    border-left: 1px solid var(--stroke);
+    border-radius: 0;
   }
 }
 </style>
@@ -285,6 +361,8 @@ h1 {
   </section>
 
   <aside class="cta-strip" aria-label="Download Chable">
+    <p class="download-heading">Download Chable</p>
+    <p class="download-note">Choose your platform to get started.</p>
     <div class="store-card">
       <a class="store-link" href="{{ chable_app_store_url }}" target="_blank" rel="noopener noreferrer" aria-label="Download Chable on the App Store">
         <img src="{{ '/assets/branding/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' | relative_url }}" alt="Download on the App Store" />

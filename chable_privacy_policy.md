@@ -7,7 +7,7 @@ layout: default
 
 [← Back to App Launchpad]({{ '/' | relative_url }})
 
-_Last updated: 2026-05-27_
+_Last updated: 2026-06-29_
 
 This Privacy Policy explains how Chable collects, uses, shares, and protects information when you use the Chable mobile app and related services.
 
@@ -52,9 +52,10 @@ Advertising partners and related SDKs may process information such as:
 
 Chable uses Google AdMob and may use mediation partners such as Meta Audience Network and Unity Ads. We use Google's User Messaging Platform where required to request and manage advertising consent choices. You may see privacy choice controls in the app when required for your region or configuration.
 
-### Technical, Security, and Diagnostic Data
+### Technical, Analytics, Security, and Diagnostic Data
 
 - App version, device type, operating system, crash details, error logs, performance data, and service reliability information.
+- Analytics and app usage data (such as screen views, sessions, and in-game interactions) collected via Google Analytics for Firebase to help us understand how players use the app.
 - Security and integrity signals from services such as Firebase App Check, Play Integrity, App Attest, or DeviceCheck, where available.
 - Cloud Functions and backend logs needed to operate, secure, debug, and improve the app.
 
@@ -70,6 +71,7 @@ We use information to:
 - Detect fraud, cheating, abuse, unauthorized automation, security threats, and policy violations.
 - Moderate user-provided content and maintain a fair game environment.
 - Respond to support requests and troubleshoot errors.
+- Analyze player engagement, feature usage, and app performance to improve the game experience.
 - Operate admin tools, official business datasets, configuration, and game-balancing systems.
 - Comply with legal obligations and enforce our Terms of Use.
 
@@ -85,7 +87,7 @@ We do not sell your personal information for money.
 
 We may share information in the following situations:
 
-- **Service providers** that help run the app, such as Firebase/Google Cloud services for authentication, database, storage, backend functions, app integrity, diagnostics, and related infrastructure.
+- **Service providers** that help run the app, such as Firebase/Google Cloud services for authentication, database, storage, analytics, backend functions, app integrity, diagnostics, and related infrastructure.
 - **Advertising partners** such as Google AdMob, Meta Audience Network, and Unity Ads, to request, deliver, measure, personalize, limit, and verify ads and rewarded ad completions. Depending on your region, some advertising data sharing may be considered a "sale" or "sharing" under privacy laws. Where required, you may be provided privacy choices.
 - **Map and place data providers** when location-based scans request nearby business/place data.
 - **Legal, safety, and security purposes** when required by law, to enforce our terms, respond to lawful requests, protect users, investigate abuse, or protect our rights and infrastructure.
@@ -96,6 +98,7 @@ We may share information in the following situations:
 Chable may use the following third-party services. Their privacy practices are governed by their own policies:
 
 - Firebase and Google Cloud: <https://firebase.google.com/support/privacy>
+- Google Analytics for Firebase: <https://support.google.com/analytics/answer/6004245>
 - Google AdMob and Google advertising products: <https://policies.google.com/technologies/ads>
 - Meta Audience Network: <https://www.facebook.com/privacy/policy/>
 - Unity Ads: <https://unity.com/legal/game-player-and-app-user-privacy-policy>
