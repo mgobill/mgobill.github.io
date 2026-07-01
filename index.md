@@ -368,7 +368,7 @@ section.main-content {
         <p class="eyebrow" style="color:#0f172a; letter-spacing:0.2em;">Business Strategy Simulation</p>
         <h2>Chable</h2>
         <p class="app-lede">
-          Scan real-world places, acquire businesses, and build your company over time. Chable blends
+          Scan real-world places, acquire businesses, and build your empire over time. Chable blends
           discovery, portfolio strategy, and financial decisions into a focused business-building game.
         </p>
       </div>
