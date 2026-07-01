@@ -104,37 +104,40 @@ h1 {
 }
 
 .download-heading {
-  margin: 0 0 0.7rem;
+  margin: 0 0 0.15rem;
   text-align: center;
   font-size: 1.05rem;
   font-weight: 800;
   color: var(--ink);
 }
 
+.download-note {
+  margin: 0 0 0.7rem;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
 .store-card {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.55rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
   background: var(--panel);
   border: 1px solid var(--stroke);
   box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
   border-radius: 14px;
-  padding: 0.45rem;
+  padding: 0.6rem;
 }
 
 .store-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 auto;
-  min-height: 0;
+  min-height: 52px;
   border-radius: 10px;
-  padding: 0.18rem 0.28rem;
+  padding: 0.35rem 0.5rem;
   border: 1px solid #e2e8f0;
   background: #f8fafc;
-  line-height: 0;
   transition: background 130ms ease, border-color 130ms ease, transform 130ms ease;
 }
 
@@ -150,7 +153,6 @@ h1 {
 }
 
 .store-link img {
-  display: block;
   height: 38px;
   width: auto;
   max-width: 100%;
@@ -170,6 +172,21 @@ h1 {
 
 .overview p {
   margin: 0;
+  color: var(--muted);
+}
+
+.feature-list {
+  margin: 0.95rem 0 0;
+  padding-left: 1.15rem;
+  color: #1e293b;
+}
+
+.feature-list li + li {
+  margin-top: 0.45rem;
+}
+
+.meta {
+  font-size: 0.95rem;
   color: var(--muted);
 }
 
@@ -266,20 +283,25 @@ h1 {
     background: linear-gradient(145deg, #0f766e 0%, #115e59 100%);
   }
 
-  .download-heading {
+  .download-heading,
+  .download-note {
     text-align: left;
     color: #f8fafc;
   }
 
+  .download-note {
+    color: rgba(248, 250, 252, 0.78);
+  }
+
   .store-card {
-    justify-content: flex-start;
-    gap: 0.65rem;
+    gap: 0.75rem;
     border-color: rgba(255, 255, 255, 0.2);
     background: rgba(255, 255, 255, 0.1);
     box-shadow: none;
   }
 
   .store-link {
+    min-height: 66px;
     background: #ffffff;
   }
 
@@ -333,13 +355,14 @@ h1 {
       </div>
     </div>
     <p>
-      Scan real-world places, acquire businesses, and build your empire over time. Chable blends
+      Scan real-world places, acquire businesses, and build your company over time. Chable blends
       exploration, portfolio planning, and financial strategy in one focused game loop.
     </p>
   </section>
 
   <aside class="cta-strip" aria-label="Download Chable">
     <p class="download-heading">Download Chable</p>
+    <p class="download-note">Choose your platform to get started.</p>
     <div class="store-card">
       <a class="store-link" href="{{ chable_app_store_url }}" target="_blank" rel="noopener noreferrer" aria-label="Download Chable on the App Store">
         <img src="{{ '/assets/branding/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' | relative_url }}" alt="Download on the App Store" />
@@ -353,16 +376,16 @@ h1 {
   <section class="overview">
     <h2>What you do in Chable</h2>
     <p>
-      Build your own real-world business empire.
+      Start with limited capital and grow into a multi-store business by making good acquisition
+      choices, balancing debt, and keeping your portfolio healthy.
     </p>
-    <p>
-      Explore your surroundings to discover nearby businesses, acquire locations, and grow your
-      conglomerate one store at a time. Every location has its own economic potential based on the
-      neighborhood around it, making each acquisition unique.
-    </p>
-    <p>
-      Expand into new industries, track your net worth, and compete against players worldwide to
-      build the ultimate business empire.
+    <ul class="feature-list">
+      <li>Scan nearby locations and match them against structured business templates.</li>
+      <li>Acquire stores and track transactions through your in-game bank ledger.</li>
+      <li>Review net worth, income, and debt trends while expanding your holdings.</li>
+    </ul>
+    <p class="meta">
+      Store availability can vary by country/region.
     </p>
     <div class="actions">
       <div class="quick-links">
