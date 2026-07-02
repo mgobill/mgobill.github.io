@@ -363,7 +363,6 @@ h1 {
 
   <aside class="cta-strip" aria-label="Download Chable">
     <p class="download-heading">Download Chable</p>
-    <p class="download-note">Choose your platform to get started.</p>
     <div class="store-card">
       <a class="store-link" href="{{ chable_app_store_url }}" target="_blank" rel="noopener noreferrer" aria-label="Download Chable on the App Store">
         <img src="{{ '/assets/branding/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' | relative_url }}" alt="Download on the App Store" />
@@ -384,9 +383,6 @@ h1 {
       <li>Build your portfolio across industries and uncover valuable neighborhoods.</li>
       <li>Grow your net worth, expand your conglomerate, and compete with players worldwide.</li>
     </ul>
-    <p class="meta">
-      Store availability can vary by country/region.
-    </p>
     <div class="actions">
       <div class="quick-links">
         <a class="quick-link" href="{{ '/chable_support' | relative_url }}">Support Center</a>
