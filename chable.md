@@ -355,8 +355,9 @@ h1 {
       </div>
     </div>
     <p>
-      Scan real-world places, acquire businesses, and build your company over time. Chable blends
-      exploration, portfolio planning, and financial strategy in one focused game loop.
+      Build your business empire in the real world. Chable combines exploration, investing, and
+      business strategy as you acquire nearby businesses, grow your portfolio, and expand your
+      conglomerate over time.
     </p>
   </section>
 
@@ -376,13 +377,12 @@ h1 {
   <section class="overview">
     <h2>What you do in Chable</h2>
     <p>
-      Start with limited capital and grow into a multi-store business by making good acquisition
-      choices, balancing debt, and keeping your portfolio healthy.
+      Turn the real world into your business empire.
     </p>
     <ul class="feature-list">
-      <li>Scan nearby locations and match them against structured business templates.</li>
-      <li>Acquire stores and track transactions through your in-game bank ledger.</li>
-      <li>Review net worth, income, and debt trends while expanding your holdings.</li>
+      <li>Explore nearby locations to discover businesses available for acquisition.</li>
+      <li>Build your portfolio across industries and uncover valuable neighborhoods.</li>
+      <li>Grow your net worth, expand your conglomerate, and compete with players worldwide.</li>
     </ul>
     <p class="meta">
       Store availability can vary by country/region.
