@@ -7,7 +7,7 @@ layout: default
 
 [← Back to App Launchpad]({{ '/' | relative_url }})
 
-_Last updated: 2026-06-29_
+_Last updated: 2026-07-21_
 
 This Privacy Policy explains how Chable collects, uses, shares, and protects information when you use the Chable mobile app and related services.
 
@@ -50,7 +50,11 @@ Advertising partners and related SDKs may process information such as:
 - Ad requests, impressions, clicks, completion events, reward confirmation, diagnostics, and fraud-prevention signals.
 - Consent choices and privacy settings where applicable.
 
-Chable uses Google AdMob and may use mediation partners such as Meta Audience Network and Unity Ads. We use Google's User Messaging Platform where required to request and manage advertising consent choices. You may see privacy choice controls in the app when required for your region or configuration.
+Chable uses Google AdMob and may use mediation partners such as Meta Audience Network, Unity Ads, and Liftoff Monetize (formerly Vungle). AdMob mediation may use real-time bidding. When an eligible ad opportunity occurs, AdMob may send an ad request to Liftoff Monetize or another mediation partner so that the partner can decide whether and how much to bid to display an ad.
+
+Liftoff Monetize and its advertising demand partners may use SDKs and similar tracking technologies to collect, receive, use, and share advertising data. Depending on your device, permissions, consent choices, and applicable law, this data may include advertising or device identifiers, IP address, device and app information, approximate location and other permitted location information, ad requests, ads viewed or clicked, ad completion and reward events, diagnostics, performance information, and fraud-prevention signals. Liftoff Monetize and its demand partners may use this information to bid on, select, deliver, personalize, limit, measure, and improve ads; create or improve advertising profiles where permitted; perform statistical analysis; and detect fraud or security issues. Liftoff states that it acts as an independent controller for the advertising data it processes through its Monetize platform where applicable data protection law uses that term.
+
+We use Google's User Messaging Platform where required to request and manage advertising consent choices. You may see privacy choice controls in the app when required for your region or configuration. Declining personalized advertising does not necessarily prevent ads from appearing, but it may limit the information used to select them.
 
 ### Technical, Analytics, Security, and Diagnostic Data
 
@@ -88,7 +92,7 @@ We do not sell your personal information for money.
 We may share information in the following situations:
 
 - **Service providers** that help run the app, such as Firebase/Google Cloud services for authentication, database, storage, analytics, backend functions, app integrity, diagnostics, and related infrastructure.
-- **Advertising partners** such as Google AdMob, Meta Audience Network, and Unity Ads, to request, deliver, measure, personalize, limit, and verify ads and rewarded ad completions. Depending on your region, some advertising data sharing may be considered a "sale" or "sharing" under privacy laws. Where required, you may be provided privacy choices.
+- **Advertising partners** such as Google AdMob, Meta Audience Network, Unity Ads, Liftoff Monetize, and advertising demand partners that participate through mediation or real-time bidding, to bid on, request, select, deliver, measure, personalize, limit, and verify ads and rewarded ad completions; perform statistical analysis; and prevent fraud. Depending on your region, some advertising data sharing may be considered a "sale," "sharing," or targeted advertising under privacy laws. Where required, you may be provided privacy choices.
 - **Map and place data providers** when location-based scans request nearby business/place data.
 - **Legal, safety, and security purposes** when required by law, to enforce our terms, respond to lawful requests, protect users, investigate abuse, or protect our rights and infrastructure.
 - **Business transfers** if Chable or related assets are involved in a merger, acquisition, reorganization, or similar transaction.
@@ -102,6 +106,8 @@ Chable may use the following third-party services. Their privacy practices are g
 - Google AdMob and Google advertising products: <https://policies.google.com/technologies/ads>
 - Meta Audience Network: <https://www.facebook.com/privacy/policy/>
 - Unity Ads: <https://unity.com/legal/game-player-and-app-user-privacy-policy>
+- Liftoff Monetize: <https://liftoff.ai/privacy-policy/>
+- Liftoff interest-based advertising choices: <https://liftoff.ai/opt-out/>
 - OpenStreetMap: <https://osmfoundation.org/wiki/Privacy_Policy>
 
 This list may change as the app evolves.
@@ -115,6 +121,7 @@ Chable uses cloud services, including Firebase and Google Cloud, to store and pr
 You can:
 
 - Control location permissions through your device settings.
+- Control advertising identifiers and tracking permissions through your device settings, where available.
 - Update editable company/profile information in the app.
 - Use in-app privacy choices where available for advertising consent and related privacy settings.
 - Delete your account and related app data using the account controls in Settings, where available.
