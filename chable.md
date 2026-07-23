@@ -5,7 +5,7 @@ description: Chable download links and game overview
 permalink: /chable/
 ---
 
-{% assign chable_app_store_url = "https://apps.apple.com/app/chable-business-empire/id6762150334" %}
+{% assign chable_app_store_url = "https://apps.apple.com/us/app/chable-business-empire/id6762150334" %}
 {% assign chable_play_store_url = "https://play.google.com/store/apps/details?id=com.mgobill.chable" %}
 
 <style>
@@ -116,6 +116,22 @@ h1 {
   text-align: center;
   font-size: 0.88rem;
   color: var(--muted);
+}
+
+.redirect-notice {
+  display: none;
+  margin: 0 0 0.7rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #f5cc76;
+  border-radius: 10px;
+  background: #fffbeb;
+  color: #78350f;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.redirect-notice.is-visible {
+  display: block;
 }
 
 .store-card {
@@ -293,6 +309,12 @@ h1 {
     color: rgba(248, 250, 252, 0.78);
   }
 
+  .redirect-notice {
+    border-color: rgba(255, 255, 255, 0.32);
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+  }
+
   .store-card {
     gap: 0.75rem;
     border-color: rgba(255, 255, 255, 0.2);
@@ -320,31 +342,6 @@ h1 {
 }
 </style>
 
-<script>
-(() => {
-  const appStoreUrl = {{ chable_app_store_url | jsonify }};
-  const playStoreUrl = {{ chable_play_store_url | jsonify }};
-  const params = new URLSearchParams(window.location.search);
-
-  if (params.get('no_redirect') === '1') {
-    return;
-  }
-
-  const userAgent = navigator.userAgent || navigator.vendor || window.opera || '';
-  const platform = navigator.platform || '';
-  const maxTouchPoints = navigator.maxTouchPoints || 0;
-  const isiOS = /iPad|iPhone|iPod/.test(userAgent) || (platform === 'MacIntel' && maxTouchPoints > 1);
-  const isAndroid = /Android/i.test(userAgent);
-  const redirectUrl = isiOS ? appStoreUrl : isAndroid ? playStoreUrl : '';
-
-  if (!redirectUrl) {
-    return;
-  }
-
-  window.location.replace(redirectUrl);
-})();
-</script>
-
 <div class="shell">
   <section class="hero">
     <div class="hero-top">
@@ -363,11 +360,12 @@ h1 {
 
   <aside class="cta-strip" aria-label="Download Chable">
     <p class="download-heading">Download Chable</p>
+    <p id="redirect-notice" class="redirect-notice" role="status" aria-live="polite"></p>
     <div class="store-card">
-      <a class="store-link" href="{{ chable_app_store_url }}" target="_blank" rel="noopener noreferrer" aria-label="Download Chable on the App Store">
+      <a class="store-link" href="{{ chable_app_store_url }}" aria-label="Download Chable on the App Store">
         <img src="{{ '/assets/branding/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' | relative_url }}" alt="Download on the App Store" />
       </a>
-      <a class="store-link" href="{{ chable_play_store_url }}" target="_blank" rel="noopener noreferrer" aria-label="Get Chable on Google Play">
+      <a class="store-link" href="{{ chable_play_store_url }}" aria-label="Get Chable on Google Play">
         <img src="{{ '/assets/branding/GetItOnGooglePlay_Badge_Web_color_English.svg' | relative_url }}" alt="Get it on Google Play" />
       </a>
     </div>
@@ -392,3 +390,44 @@ h1 {
     </div>
   </section>
 </div>
+
+<script>
+(() => {
+  const appStoreUrl = {{ chable_app_store_url | jsonify }};
+  const playStoreUrl = {{ chable_play_store_url | jsonify }};
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.get('no_redirect') === '1') {
+    return;
+  }
+
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera || '';
+  const platform = navigator.platform || '';
+  const maxTouchPoints = navigator.maxTouchPoints || 0;
+  const isiOS = /iPad|iPhone|iPod/.test(userAgent) || (platform === 'MacIntel' && maxTouchPoints > 1);
+  const isAndroid = /Android/i.test(userAgent);
+  const isKnownInAppBrowser = /FBAN|FBAV|MessengerForiOS|Instagram|Line\/|Twitter/i.test(userAgent);
+  const isiOSWebView = isiOS && !/Safari/i.test(userAgent);
+  const notice = document.getElementById('redirect-notice');
+
+  // iOS in-app browsers can suppress an automatic handoff to the App Store.
+  // Keep the landing page visible so the user's tap can initiate navigation.
+  if (isiOS && (isKnownInAppBrowser || isiOSWebView)) {
+    notice.textContent = 'Your in-app browser may block an automatic App Store redirect. Tap the App Store button below, or use the browser menu to open this page in Safari.';
+    notice.classList.add('is-visible');
+    return;
+  }
+
+  const redirectUrl = isiOS ? appStoreUrl : isAndroid ? playStoreUrl : '';
+
+  if (!redirectUrl) {
+    return;
+  }
+
+  notice.textContent = isiOS ? 'Opening the App Store…' : 'Opening Google Play…';
+  notice.classList.add('is-visible');
+
+  // Let the fallback UI render before leaving this page.
+  window.setTimeout(() => window.location.replace(redirectUrl), 250);
+})();
+</script>
