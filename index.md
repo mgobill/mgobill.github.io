@@ -361,6 +361,128 @@ section.main-content {
 </div>
 
 <div class="app-panels">
+  <article class="app-panel" id="chatatc">
+    <div class="app-header">
+      <span class="app-icon" role="img" aria-label="ChatATC radar symbol">✈</span>
+      <div>
+        <p class="eyebrow" style="color:#0f172a; letter-spacing:0.2em;">Voice-Controlled ATC Game</p>
+        <h2>ChatATC</h2>
+        <p class="app-lede">
+          Take the radar seat and guide aircraft with hold-to-talk radio commands.
+          Build your controller skills through Career lessons, then manage arrivals and departures in Open Play.
+        </p>
+      </div>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-block">
+        <h3>Your Voice, Their Flight Path</h3>
+        <ul class="feature-list">
+          <li>Hold PUSH TO TALK to issue headings, altitudes, speeds, and navigation clearances.</li>
+          <li>Watch aircraft respond on the radar and keep traffic safely separated.</li>
+          <li>Manage runway operations around Raleigh–Durham (RDU).</li>
+        </ul>
+      </div>
+      <div class="feature-block">
+        <h3>Learn, Then Take Control</h3>
+        <ul class="feature-list">
+          <li>Practice radio commands and aircraft control in guided Career lessons.</li>
+          <li>Put heading, separation, departure, and landing skills to the test.</li>
+          <li>Return to locally saved progress and Open Play sessions.</li>
+        </ul>
+      </div>
+      <div class="feature-block">
+        <h3>A Growing Challenge</h3>
+        <ul class="feature-list">
+          <li>Adjust simulation speed as you build confidence.</li>
+          <li>The game will include ads and optional in-app purchases.</li>
+          <li>An online leaderboard is planned for a future update.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3>Store Links</h3>
+      <div class="store-badges">
+        <span class="store-badge" aria-label="ChatATC on the App Store coming soon">
+          <img src="{{ '/assets/branding/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' | relative_url }}" alt="App Store coming soon" style="opacity:0.35;" />
+        </span>
+        <span class="store-badge" aria-label="ChatATC on Google Play coming soon">
+          <img src="{{ '/assets/branding/GetItOnGooglePlay_Badge_Web_color_English.svg' | relative_url }}" alt="Google Play coming soon" style="opacity:0.35;" />
+        </span>
+      </div>
+      <p class="app-lede" style="margin-top:0.5rem; color:#475569;">
+        Coming soon. Store listings are not live yet. Planned release features include ads and optional in-app purchases;
+        the leaderboard will follow in a future update. For entertainment only, not real-world aviation use.
+      </p>
+    </div>
+    <div>
+      <h3>Support &amp; Policies</h3>
+      <ul class="policy-links">
+        <li><a href="./chatatc_support">Support Center</a></li>
+        <li><a href="./chatatc_privacy_policy">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </article>
+  <article class="app-panel" id="reflex-party">
+    <div class="app-header">
+      <img src="{{ '/assets/icon_reflexparty.png' | relative_url }}" alt="Reflex Party app icon" />
+      <div>
+        <p class="eyebrow" style="color:#0f172a; letter-spacing:0.2em;">One-Device Party Game</p>
+        <h2>Reflex Party</h2>
+        <p class="app-lede">
+          Gather around one phone or tablet for quick rounds of reaction, observation, and timing.
+          Challenge a friend, practice solo, or bring more players with the optional Full Game upgrade.
+        </p>
+      </div>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-block">
+        <h3>Fast Reactions, Shared Fun</h3>
+        <ul class="feature-list">
+          <li>Play together on one device, with no accounts or online matchmaking.</li>
+          <li>Be first to answer correctly for +1 point; wrong or early taps cost 1 point.</li>
+          <li>Keep gameplay going offline on iPhone, iPad, and Android phones and tablets.</li>
+        </ul>
+      </div>
+      <div class="feature-block">
+        <h3>Mix Up the Challenge</h3>
+        <ul class="feature-list">
+          <li>Test your timing with Green Light and Hidden Countdown.</li>
+          <li>Spot patterns, match colors, solve math, and untangle visual puzzles.</li>
+          <li>Jump into Quick Play or choose your games and round count in Custom game.</li>
+        </ul>
+      </div>
+      <div class="feature-block">
+        <h3>Practice or Party</h3>
+        <ul class="feature-list">
+          <li>Solo Practice and two-player play are free with the available mini games.</li>
+          <li>The planned one-time Full Game purchase adds three/four-player play and removes interstitial ads.</li>
+          <li>The free version will include occasional ads between completed sessions.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3>Store Links</h3>
+      <div class="store-badges">
+        <span class="store-badge" aria-label="Reflex Party on the App Store coming soon">
+          <img src="{{ '/assets/branding/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' | relative_url }}" alt="App Store coming soon" style="opacity:0.35;" />
+        </span>
+        <span class="store-badge" aria-label="Reflex Party on Google Play coming soon">
+          <img src="{{ '/assets/branding/GetItOnGooglePlay_Badge_Web_color_English.svg' | relative_url }}" alt="Google Play coming soon" style="opacity:0.35;" />
+        </span>
+      </div>
+      <p class="app-lede" style="margin-top:0.5rem; color:#475569;">
+        Coming soon to the App Store and Google Play. Store listings are not live yet.
+        Contains ads and optional in-app purchases when released.
+      </p>
+    </div>
+    <div>
+      <h3>Support & Policies</h3>
+      <ul class="policy-links">
+        <li><a href="./reflexparty_support">Support Center</a></li>
+        <li><a href="./reflexparty_privacy_policy">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </article>
   <article class="app-panel" id="chable">
     <div class="app-header">
       <img src="{{ '/assets/icon_chable.png' | relative_url }}" alt="Chable app icon" />
