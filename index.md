@@ -208,7 +208,12 @@ section.main-content {
 }
 
 .app-header img,
-.app-header .app-icon {
+.app-header #chatatc .app-header img,
+#reflex-party .app-header img {
+  margin-top: 0;
+}
+
+.app-icon {
   margin-top: var(--icon-offset);
 }
 
@@ -363,7 +368,7 @@ section.main-content {
 <div class="app-panels">
   <article class="app-panel" id="chatatc">
     <div class="app-header">
-      <span class="app-icon" role="img" aria-label="ChatATC radar symbol">✈</span>
+      <img src="{{ '/assets/icon_chatatc.png' | relative_url }}" alt="ChatATC app icon" />
       <div>
         <p class="eyebrow" style="color:#0f172a; letter-spacing:0.2em;">Voice-Controlled ATC Game</p>
         <h2>ChatATC</h2>
