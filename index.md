@@ -445,7 +445,7 @@ section.main-content {
         <ul class="feature-list">
           <li>Play together on one device, with no accounts or online matchmaking.</li>
           <li>Be first to answer correctly for +1 point; wrong or early taps cost 1 point.</li>
-          <li>Keep gameplay going offline on iPhone, iPad, and Android phones and tablets.</li>
+          <li>Keep gameplay going offline on iPhone and iPad.</li>
         </ul>
       </div>
       <div class="feature-block">
@@ -460,24 +460,20 @@ section.main-content {
         <h3>Practice or Party</h3>
         <ul class="feature-list">
           <li>Solo Practice and two-player play are free with the available mini games.</li>
-          <li>The planned one-time Full Game purchase adds three/four-player play and removes interstitial ads.</li>
-          <li>The free version will include occasional ads between completed sessions.</li>
+          <li>The one-time Full Game purchase adds games and three/four-player play, and removes interstitial ads.</li>
+          <li>The free version includes occasional ads after completed sessions.</li>
         </ul>
       </div>
     </div>
     <div>
       <h3>Store Links</h3>
       <div class="store-badges">
-        <span class="store-badge" aria-label="Reflex Party on the App Store coming soon">
-          <img src="{{ '/assets/branding/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' | relative_url }}" alt="App Store coming soon" style="opacity:0.35;" />
-        </span>
-        <span class="store-badge" aria-label="Reflex Party on Google Play coming soon">
-          <img src="{{ '/assets/branding/GetItOnGooglePlay_Badge_Web_color_English.svg' | relative_url }}" alt="Google Play coming soon" style="opacity:0.35;" />
-        </span>
+        <a class="store-badge" href="https://apps.apple.com/us/app/reflex-party-minigames/id6821924528" target="_blank" rel="noopener noreferrer" aria-label="Download Reflex Party on the App Store">
+          <img src="{{ '/assets/branding/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' | relative_url }}" alt="Download Reflex Party on the App Store" />
+        </a>
       </div>
       <p class="app-lede" style="margin-top:0.5rem; color:#475569;">
-        Coming soon to the App Store and Google Play. Store listings are not live yet.
-        Contains ads and optional in-app purchases when released.
+        Now available on the App Store for iPhone and iPad. Contains ads and optional in-app purchases.
       </p>
     </div>
     <div>
